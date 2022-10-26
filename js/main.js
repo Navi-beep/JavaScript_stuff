@@ -207,4 +207,13 @@ console.log(maxNum([10]))
 
 
 var button = document.querySelector('button');
-var box = document.getElementById('thing');
+var box = document.getElementById('blah');
+console.log(box)
+
+function changeColor() {
+    box.style.background = 'black';
+    
+}
+
+
+
