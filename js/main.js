@@ -204,3 +204,7 @@ console.log('=======')
 console.log(maxNum([3, 7, 2, 8, 10, 4, 11]))
 console.log(maxNum([33, 88, 55, 22, 11, 44]))
 console.log(maxNum([10]))
+
+
+var button = document.querySelector('button');
+var box = document.getElementById('thing');
