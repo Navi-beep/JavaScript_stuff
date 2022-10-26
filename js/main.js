@@ -19,6 +19,7 @@ const myObject = {
 
 console.log(myObject)
 console.log(typeof myObject)
+console.log(myObject.b)
 
 /*
     JavaScript Functions
