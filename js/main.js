@@ -215,5 +215,12 @@ function changeColor() {
     
 }
 
+var datArr = [2,4,6,8,10]
+console.log(datArr[2]);
 
+let cats = 50;
+
+let ageCats = (cats >= 20) ? 'big cat': 'small cat';
+
+console.log(ageCats)
 
