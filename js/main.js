@@ -224,3 +224,15 @@ let ageCats = (cats >= 20) ? 'big cat': 'small cat';
 
 console.log(ageCats)
 
+
+x = [1,2,3,4,5,7]
+
+function consecutiveOne(x){
+    for(let i = 0; i<x.length; i++) {
+        if (x[i] + 1 != x[i+1]) {
+            return i + 1
+        }
+    } 
+}
+
+console.log(consecutiveOne([1,2,3,4,5,9]))
