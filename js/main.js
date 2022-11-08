@@ -229,6 +229,7 @@ x = [1,2,3,4,5,7]
 
 function consecutiveOne(x){
     for(let i = 0; i<x.length; i++) {
+        
         if (x[i] + 1 != x[i+1]) {
             return i + 1
         }
@@ -236,3 +237,29 @@ function consecutiveOne(x){
 }
 
 console.log(consecutiveOne([1,2,3,4,5,9]))
+console.log(consecutiveOne(x))
+console.log((x[0]))
+console.log((x[0] + 1))
+console.log((x[0+1]))
+
+const jiji = function(x) {
+    return x ** 2
+}
+
+console.log(jiji(4))
+
+//given an array, return the sum of all the positive elements in the array 
+//as an arrow function
+
+x = [1,2,3,4,5,-1]
+
+var posSums = x => {
+    let total = 0
+for (let n of x) {
+    if (n > 0) {
+    total += n }
+} return total;
+
+}
+
+console.log(posSums(x))
