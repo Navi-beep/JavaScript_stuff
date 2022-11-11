@@ -263,3 +263,15 @@ for (let n of x) {
 }
 
 console.log(posSums(x))
+
+
+
+const s = 'hello world'
+console.log(s)
+
+var lengthOfLastWord = function(s) {
+    const n = s.trim().split(' ');
+    const last = n[n.length - 1];
+    number = last.length;
+    return number 
+}
