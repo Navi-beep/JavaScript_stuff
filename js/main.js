@@ -275,3 +275,15 @@ var lengthOfLastWord = function(s) {
     number = last.length;
     return number 
 }
+
+function catsKitty(thing) {
+    let thing2 = [];
+    for(x in thing){
+        x *= 2
+        thing2.push(x)
+
+    } 
+    return thing2
+}
+
+console.log(catsKitty([1,2,3,4,5,6,7]))
