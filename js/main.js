@@ -287,3 +287,16 @@ function catsKitty(thing) {
 } 
 
 console.log(catsKitty([1,2,3,4,5,6,7]))
+
+
+
+//Covfefe
+//Your are given a string. You must replace any occurence of the sequence coverage by covfefe, however, if you don't find the word coverage in the string, you must add covfefe at the end of the string with a leading space.
+
+function covfefe(str){
+    //covfefe !
+    //console.log(str)
+    return str
+  }
+
+console.log(covfefe('there is a cat'))
