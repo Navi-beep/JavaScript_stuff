@@ -300,3 +300,13 @@ function covfefe(str){
   }
 
 console.log(covfefe('there is a cat'))
+
+
+cats = ['tuxedo', 'british shorthair', 'tortoiseshell', 'longhair', 'norwegian']
+
+console.log(cats)
+
+cats[1] = 'sphynx cat'
+
+console.log(cats)
+
