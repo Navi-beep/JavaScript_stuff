@@ -342,3 +342,14 @@ function sumOfMinimums(arr) {
 
  let arr3 = [1,2,3]
  console.log(Math.min(...arr3))
+
+
+ const a = [1,2,3,4,5,6]
+ const b = [2,3,4]
+
+ function array(a, b) {
+    return a.filter(e => !b.includes(e));
+  }
+
+console.log(array(a,b))
+
