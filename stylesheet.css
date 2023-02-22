@@ -11,3 +11,14 @@
 
 /* # is for ID and . is for class */
 
+.cute {
+    margin-top: 1em;
+    border-style: solid;
+    
+    width: 20em;
+    text-align: center;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+
+}
