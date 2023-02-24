@@ -353,3 +353,6 @@ function sumOfMinimums(arr) {
 
 console.log(array(a,b))
 
+
+
+
