@@ -354,5 +354,18 @@ function sumOfMinimums(arr) {
 console.log(array(a,b))
 
 
+function reverseWords(garbage){
+    return garbage.split(" ").reverse().join(' ');
+}
+
+console.log(reverseWords('what the heck is this karen'))
 
 
+function sumNoDuplicates(numList) {
+    const sum = 0;
+    thing = [...new Set(numList)];
+    return thing; 
+  }  
+
+
+console.log(sumNoDuplicates([1,1,2,3,4,5,5,6]))
