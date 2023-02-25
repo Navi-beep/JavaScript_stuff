@@ -369,3 +369,6 @@ function sumNoDuplicates(numList) {
 
 
 console.log(sumNoDuplicates([1,1,2,3,4,5,5,6]))
+
+
+//gotta add some stuff 
