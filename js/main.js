@@ -372,3 +372,11 @@ console.log(sumNoDuplicates([1,1,2,3,4,5,5,6]))
 
 
 //gotta add some stuff 
+
+function sumNoDups(numList) {
+    const uniqueArr=numList.filter((num,index)=>numList.indexOf(num)===index&&numList.lastIndexOf(num)===index)
+    return uniqueArr.reduce((x,y)=>x+y,0);
+    }
+
+console.log(sumNoDups([1,2,2,2,5,6,7]))
+
