@@ -378,5 +378,7 @@ function sumNoDups(numList) {
     return uniqueArr.reduce((x,y)=>x+y,0);
     }
 
-console.log(sumNoDups([1,2,2,2,5,6,7]))
+console.log(sumNoDups([1,2,2,5,6,7]))
 
+const catBird = [1,2,3,46,7,8]
+console.log(catBird.lastIndexOf(46))
