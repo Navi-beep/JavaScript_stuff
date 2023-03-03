@@ -382,3 +382,22 @@ console.log(sumNoDups([1,2,2,5,6,7]))
 
 const catBird = [1,2,3,46,7,8]
 console.log(catBird.lastIndexOf(46))
+
+
+
+function add(l) {
+    return l + 100 
+}
+
+function subtract(m){
+    const thingy = add(300);
+    return thingy - m 
+}
+
+console.log(add(100))
+
+console.log(subtract(5))
+
+
+
+//console.log(dogs('cats'))
