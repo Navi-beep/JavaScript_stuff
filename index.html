@@ -30,8 +30,8 @@
 
             <a class="d-flex container-fluid btn btn-dark w-25 justify-content-center" href="https://www.youtube.com/watch?v=v3utj4sbdGU&ab_channel=TheLostLibraryofVine" target="_blank" role="button">Link</a>
 
-            <div class="cute">
-                <h3 class="cute2">thing</h3>
+            <div class="cute" id="meow">
+                <h3 class="cute2"></h3>
             </div>
 
             <div id='demo' class="d-flex container-fluid text-center w-25 mt-2 mb-2">
@@ -45,6 +45,16 @@
 
             <button type="button" class="d-flex container-fluid justify-content-center w-25 mt-2 shadow p-3 mb-5 bg-body-tertiary rounded" style="background-color: rgb(233, 234, 239);" onclick="document.getElementById('demo').innerHTML=Date()">Click on this for the date and time</button>
             <h2 id="demo" class="thing text-light d-flex container-fluid justify-content-center w-25"></h2>
+
+            <script>
+            
+                function add(l) {
+                return l + 100 
+                }
+
+                document.getElementById('meow').innerHTML=add(200);
+                
+            </script>
 
             <script src="./js/main.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
