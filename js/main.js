@@ -400,4 +400,23 @@ console.log(subtract(5))
 
 
 
-//console.log(dogs('cats'))
+//bones = [1,2,3,4,5,6]
+
+var dogs = bones => {
+    let dblBones = []
+    for(let b of bones) {
+        dblBones.push(b*2)
+    }
+    return dblBones
+}
+
+//var posSums = x => {
+ //   let total = 0
+//for (let n of x) {
+//    if (n > 0) {
+//    total += n }
+//} return total;
+
+//}
+
+console.log(dogs([1,2,3,4,5]))
