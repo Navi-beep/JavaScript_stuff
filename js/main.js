@@ -420,4 +420,3 @@ var dogs = bones => {
 //}
 
 console.log(dogs([1,2,3,4,5]))
-console.log(dogs([1,2,3,4,7,8,9,0]))
