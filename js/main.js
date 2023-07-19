@@ -420,3 +420,20 @@ var dogs = bones => {
 //}
 
 console.log(dogs([1,2,3,4,5]))
+
+
+function betterThanAverage(classPoints, yourPoints) {
+    let sum = 0
+    let nP = []
+    nP.push(yourPoints)
+    for(let i = 0; i<classPoints.length; i++) {
+      nP.push(classPoints[i])
+      sum +=classPoints[i]
+      console.log(nP.length)
+    } if(sum/nP.length < yourPoints) {
+      return true
+    } return false
+  
+  }
+  
+  document.getElementById("bean").innerHTML = betterThanAverage([99,45,67,98,97,87],[88])
