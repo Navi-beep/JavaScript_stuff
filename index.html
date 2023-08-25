@@ -70,9 +70,15 @@
                 //document.getElementById('meow').innerHTML=add(200);
 
 
-            
+            function stringy(str) {
+                let cat = ''
+                if(str % 2 != 0) {
+                 return cat += "10".repeat(str/2) + '1'
+                }
+                 return cat += "10".repeat(str/2)
+            }
 
-
+            document.getElementById("beans").innerHTML = stringy(12)
                 
             </script>
 
