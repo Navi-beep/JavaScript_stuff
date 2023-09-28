@@ -61,6 +61,8 @@
             <button type="button" class="d-flex container-fluid justify-content-center w-25 mt-2 shadow p-3 mb-5 bg-body-tertiary rounded" style="background-color: rgb(233, 234, 239);" onclick="document.getElementById('demo').innerHTML=Date()">Click on this for the date and time</button>
             <h2 id="demo" class="thing text-light d-flex container-fluid justify-content-center w-25"></h2>
 
+            <h3 id="bird" class="d-flex container-fluid justify-content-center">cats</h3>
+
             <script>
             
                 //function add(l) {
@@ -79,6 +81,23 @@
             }
 
             document.getElementById("beans").innerHTML = stringy(12)
+
+            const arry = [
+    [1, 2], [3, 4], [5, 6]
+  ];
+  
+            function thingy(arry){
+                let product = 1
+            
+            for (let i = 0; i < arry.length; i++) {
+                for (let j = 0; j < arry[i].length; j++) {
+                product *= arry[i][j];
+                }
+                
+            } return product
+            }
+  
+  document.getElementById("bird").innerHTML = thingy([[1, 2], [3, 4], [5, 6]])
                 
             </script>
 

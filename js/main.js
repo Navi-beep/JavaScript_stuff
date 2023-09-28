@@ -437,3 +437,6 @@ function betterThanAverage(classPoints, yourPoints) {
   }
   
   document.getElementById("bean").innerHTML = betterThanAverage([99,45,67,98,97,87],[88])
+
+
+  
