@@ -63,6 +63,10 @@
 
             <h3 id="bird" class="d-flex container-fluid justify-content-center">cats</h3>
 
+            <h3 id="bean"></h3>
+                <h3 id="potato"></h3>
+                <h3 id="fries"></h3>
+
             <script>
             
                 //function add(l) {
@@ -98,6 +102,68 @@
             }
   
   document.getElementById("bird").innerHTML = thingy([[1, 2], [3, 4], [5, 6]])
+
+
+
+
+                        // Setup
+            function phoneticLookup(val) {
+            let result = "";
+
+            // Only change code below this line
+            const lookup =  {
+            "alpha": "Adams", 
+            "bravo":"Boston", 
+            "charlie":"Chicago", 
+            "delta": "Denver", 
+                "echo": "Easy", 
+                "foxtrot": "Frank"
+            }
+            result = lookup[val]
+            // Only change code above this line
+            return result;
+            }
+
+
+            function cheeseyDip(jazz) {
+            
+            let resulty = "";
+            
+            const cat = {
+                "paws": "danger mitts",
+                "color":"tuxedo"
+            }
+            resulty = cat[jazz];
+            return resulty
+            }
+
+
+            const myStorage = {
+            "car": {
+                "inside": {
+                "glove box": "maps",
+                "passenger seat": "crumbs"
+                },
+                "outside": {
+                "trunk": "jack"
+                }
+            }
+            };
+
+            const gloveBoxContents = myStorage.car.inside["glove box"];
+
+
+
+
+
+
+
+
+
+
+            document.getElementById("bean").innerHTML = phoneticLookup("charlie");
+            document.getElementById("potato").innerHTML = cheeseyDip("paws");
+            document.getElementById("fries").innerHTML = gloveBoxContents; 
                 
             </script>
 
