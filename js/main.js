@@ -468,3 +468,26 @@ function betterThanAverage(classPoints, yourPoints) {
     getJoke();
     jokeButton();
   }) 
+
+
+  {
+    async function earthQuake() {
+      let response = await fetch(
+        `https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2023-03-01&endtime=2023-03-02`
+      );
+      let datay = await response.json();
+      console.log(datay.features[0].properties.place);
+      document.getElementById("name").innerHTML = `Location: ${datay.features[0].properties.place}`;
+      document.getElementById("earth1").innerHTML = `Magnitude: ${datay.features[0].properties.mag}`;
+      document.getElementById("earth2").innerHTML = `${datay.features[0].properties.url}`;
+    
+      document.getElementById("earth3").innerHTML = `${datay.features[0].geometry.coordinates}`;
+      return datay;
+     
+    }
+    
+    earthQuake();
+    
+    
+    }
+    
