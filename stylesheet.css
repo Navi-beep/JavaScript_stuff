@@ -32,3 +32,23 @@
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
+#title {
+    font-weight: bold;
+  }
+  
+  
+  #divy {
+    box-shadow: 6px 6px 2px 1px rgb(135,206,235);
+  }
+  
+  #button:hover {
+    box-shadow: 3px 3px 2px 1px rgb(135,206,235);
+  }
+  
+  #button {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  } 
+  

@@ -439,4 +439,32 @@ function betterThanAverage(classPoints, yourPoints) {
   document.getElementById("bean").innerHTML = betterThanAverage([99,45,67,98,97,87],[88])
 
 
+  async function getJoke(){
+    const res = await fetch('https://icanhazdadjoke.com/', {
+      headers: {
+        Accept: "application/json"
+      }
+    }) 
   
+  const funny = await res.json();
+  const jazz = funny.joke;
+  
+  document.getElementById("dad").innerHTML = jazz 
+  console.log(jazz);
+     
+   
+  } 
+  
+  
+  
+  
+  
+  function jokeButton(){
+    let button = document.getElementById("button")
+    button.addEventListener("click", getJoke)
+  }
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    getJoke();
+    jokeButton();
+  }) 
