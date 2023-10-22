@@ -479,7 +479,7 @@ function betterThanAverage(classPoints, yourPoints) {
       );
       let datay = await response.json();
       //console.log(datay.features[0].properties.place);
-      console.log(datay)
+      //console.log(datay)
       document.getElementById("name").innerHTML = `Location: ${datay.features[0].properties.place}`;
       document.getElementById("earth1").innerHTML = `Magnitude: ${datay.features[0].properties.mag}`;
       document.getElementById("earth2").innerHTML = `${datay.features[0].properties.url}`;
@@ -542,9 +542,25 @@ function betterThanAverage(classPoints, yourPoints) {
         return args.reduce(symDiff);
       }
 
+
+      console.log(sym([1, 2, 3], [5, 2, 1, 4]))
+
+
       /*push() is used to break down the arguments object to an array, args.
 The symDiff function finds the symmetric difference between two sets. It is used as a callback function for the reduce() method called on args.
 arrayOne.forEach() pushes the elements to result which are present only in arrayOne as well as not already a part of result.
 arrayTwo.forEach() pushes the elements to result which are present only in arrayTwo as well as not already a part of result.
 The result, which is the symmetric difference is returned. This solution works for any number of sets.
 */ 
+
+
+function birdy() {
+    const args = [];
+    for (let i = 0; i < arguments.length; i++) {
+      args.push(arguments[i]);
+    }
+    return args
+}
+
+
+console.log(birdy([1, 2, 3], [5, 2, 1, 4]))
