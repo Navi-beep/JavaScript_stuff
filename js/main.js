@@ -439,7 +439,7 @@ function betterThanAverage(classPoints, yourPoints) {
   document.getElementById("bean").innerHTML = betterThanAverage([99,45,67,98,97,87],[88])
 
 
-  async function getJoke(){
+  /*async function getJoke(){
     const res = await fetch('https://icanhazdadjoke.com/', {
       headers: {
         Accept: "application/json"
@@ -454,6 +454,8 @@ function betterThanAverage(classPoints, yourPoints) {
      
    
   } 
+
+  
   
   
   
@@ -469,14 +471,15 @@ function betterThanAverage(classPoints, yourPoints) {
     jokeButton();
   }) 
 
-
+*/ 
   {
     async function earthQuake() {
       let response = await fetch(
         `https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2023-03-01&endtime=2023-03-02`
       );
       let datay = await response.json();
-      console.log(datay.features[0].properties.place);
+      //console.log(datay.features[0].properties.place);
+      console.log(datay)
       document.getElementById("name").innerHTML = `Location: ${datay.features[0].properties.place}`;
       document.getElementById("earth1").innerHTML = `Magnitude: ${datay.features[0].properties.mag}`;
       document.getElementById("earth2").innerHTML = `${datay.features[0].properties.url}`;
@@ -490,4 +493,58 @@ function betterThanAverage(classPoints, yourPoints) {
     
     
     }
+
+
+    console.log('cats')
     
+
+   /* function sym(args) {
+        return Array.from(args)
+      }
+      
+   */  console.log(sym([1, 2, 3], [5, 2, 1, 4]));
+
+
+
+    function sets(arrays,arr){
+        let bean = arrays.concat(arr)
+        return bean 
+    }
+
+    console.log(sets([1, 2, 3], [5, 2, 1, 4]))
+
+
+    function sym() {
+        const args = [];
+        for (let i = 0; i < arguments.length; i++) {
+          args.push(arguments[i]);
+        }
+      
+        function symDiff(arrayOne, arrayTwo) {
+          const result = [];
+      
+          arrayOne.forEach(function (item) {
+            if (arrayTwo.indexOf(item) < 0 && result.indexOf(item) < 0) {
+              result.push(item);
+            }
+          });
+      
+          arrayTwo.forEach(function (item) {
+            if (arrayOne.indexOf(item) < 0 && result.indexOf(item) < 0) {
+              result.push(item);
+            }
+          });
+      
+          return result;
+        }
+      
+        // Apply reduce method to args array, using the symDiff function
+        return args.reduce(symDiff);
+      }
+
+      /*push() is used to break down the arguments object to an array, args.
+The symDiff function finds the symmetric difference between two sets. It is used as a callback function for the reduce() method called on args.
+arrayOne.forEach() pushes the elements to result which are present only in arrayOne as well as not already a part of result.
+arrayTwo.forEach() pushes the elements to result which are present only in arrayTwo as well as not already a part of result.
+The result, which is the symmetric difference is returned. This solution works for any number of sets.
+*/ 
