@@ -566,7 +566,5 @@ function birdy() {
 console.log(birdy([1, 2, 3], [5, 2, 1, 4]))
 
 
-function oddMult(arr){
-    return arr 
-}
+
 

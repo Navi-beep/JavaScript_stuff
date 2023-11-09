@@ -79,11 +79,23 @@
                     </div>
                     </div>
 
-            <h4 id="birdBrain" class="d-flex container-fluid text-center justify-content-center">cats</h4>
+            <h4 id="birdBrain" class="d-flex container-fluid text-center justify-content-center"></h4>
 
             <script>
+
+            function oddMult(arr){
+                let meow = []
+                for(let i = 0; i < arr.length; i++) {
+                if(i % 2 == 0){
+                meow.push(arr[i]*2)
+                } else {
+                    meow.push(arr[i])
+                }
+            }
+            return meow 
+            }
             
-            document.getElementById("birdBrain").innerHTML = 'taco'
+            document.getElementById("birdBrain").innerHTML = oddMult([1,2,3,4,5,7])
 
                 function add(l) {
                 return l + 100 
